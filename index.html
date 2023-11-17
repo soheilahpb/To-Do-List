@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/output.css">
+    <link rel="stylesheet" href="font/bootstrap-icons.min.css">
+    
+</head>
+
+<body class="w-full 2xl:container mx-auto">
+    <main class="flex items-center justify-center px-10 w-full h-[100vh] bg-[#A39BD2]">
+        <div class="todo  w-full min-h-[500px] md:w-3/5 bg-[#F1F5F8] overflow-hidden rounded-xl bg-dotted shadow-box bg-dot">
+            <div class="header w-full h-1/6 flex justify-center items-center py-3">
+                <figure class="w-1/5 h-full">
+                    <img class="w-full h-full object-cover" src="img/laptop.svg" alt="">
+                </figure>
+                <h1 class="capitalize bg-[#48FCD4] rotate-[5deg] px-3 py-1 rounded-title font-extrabold text-xl text-[#494A4B] font-sans">to-do-list</h1>
+            </div>
+            <div class=" flex flex-wrap  w-full justify-center items-center">
+                <h2 class="flex items-center justify-center w-full font-sans font-semibold italic text-[1.8vw] cursor-default my-1">Today I need to...</h2>
+                <div id="form" class="flex items-center justify-center w-full my-5">
+                    <input id="inp" type="text" required class="w-[3/5] bg-transparent border-b-[3px] border-dashed border-b-[#ea95e0] focus:border-2 focus:border-solid focus:bg-[#ea95e0] text-[#3f3e41b3] font-sans">
+                    <button class="btn" class="rotate-[4deg] shadow-btn"><span class="rounded-5px border-[#3f3e41b3] text-sm border-2 px-2 rounded-lg ms-4 font-sans italic">submit</span></button>
+                </div>
+            </div>
+            
+            <div class="h-auto p-10 ">
+                <ul id="list" class="w-full list-none"></ul>
+            </div>
+
+        </div>
+    </main>
+</body>
+<script src="javascript/master.js"></script>
+</html>
